@@ -1,6 +1,8 @@
 # Imaging：节点式图像处理软件
 ## 简介
 本项目是**北京大学2024年春程序设计实习**课程 “`重生之我编程填空都队`” ( **沈睿弘、陈睿哲、高美珺** 信息科学技术学院23级 ) 的Qt面向对象大作业。我们使用 Qt+OpenCV 开发了一个节点式图像处理软件 `Imaging` ，使用户能通过增减、移动、连接具有不同功能的函数节点对图像进行各种操作与调整，从而实现图像的调色、美化和再创作。
+
+详见[作业报告](https://github.com/nnnnnmt/Imaging/blob/main/70-%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.pdf)
 ![image](https://github.com/nnnnnmt/Imaging/blob/main/imaging.png)
 ## 功能
 ### 功能列表
