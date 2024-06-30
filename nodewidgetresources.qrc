@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>nodewidget/image.png</file>
+        <file>nodewidget/INPUT.png</file>
+        <file>nodewidget/close.png</file>
+        <file>nodewidget/edit.png</file>
+        <file>nodewidget/CONTRAST.png</file>
+        <file>nodewidget/SATURATION.png</file>
+        <file>nodewidget/ADD.png</file>
+        <file>nodewidget/BRIGHTNESS.png</file>
+        <file>nodewidget/FILTER.png</file>
+        <file>nodewidget/HUE.png</file>
+        <file>nodewidget/TEMPERATURE.png</file>
+        <file>nodewidget/AIP2P.png</file>
+        <file>nodewidget/AIT2P.png</file>
+        <file>nodewidget/begin.png</file>
+        <file>nodewidget/check.png</file>
+        <file>nodewidget/OUTPUT.png</file>
+        <file>nodewidget/EDIT(node).png</file>
+        <file>nodewidget/addTerminal.png</file>
+        <file>nodewidget/delTerminal.png</file>
+        <file>nodewidget/open.png</file>
+    </qresource>
+</RCC>

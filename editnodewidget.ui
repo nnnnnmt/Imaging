@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditNodeWidget</class>
+ <widget class="QWidget" name="EditNodeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(255, 255, 255,0);
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 15px;
+border: 3px solid rgb(3, 23, 3);
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+	stop:0 rgb(243,218,108),
+	stop:0.167 rgb(243,218,108),
+	stop:0.1670001 rgb(255,253,220)
+	stop:1 rgb(255, 253, 220));</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="nameLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>180</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgba(255, 255, 255, 0);
+border: none;
+font: 14pt &quot;黑体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>编辑</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+border-radius: 10px;
+image: url(:/nodewidget/EDIT(node).png);
+background: rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>60</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    image: url(:/nodewidget/edit.png);
+	border-radius: 5px;
+	border: 0px;
+	background-color: rgb(245, 230, 169);
+}
+
+QPushButton:hover {
+	background-color: rgb(239,218,125);
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid rgb(239,218,125);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>265</width>
+      <height>165</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px dashed rgb(100, 100, 100);
+border-radius: 10px;
+background-color:rgb(230, 230, 230);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+border: none;
+background-color: rgba(255, 255, 255, 0);
+font: 10pt &quot;黑体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>预览</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>116</y>
+      <width>253</width>
+      <height>153</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255,255,255,0);
+border-color: rgba(255, 255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>此处显示图像</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="xSlider">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>265</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider {
+	border: none;
+	background: none;
+}
+
+QSlider::groove:horizontal {
+	height: 4px;
+	background-color: rgb(120,190,150);
+	border-radius: 1px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+QSlider::sub-page:horizontal {
+	background-color: rgb(160,145,21);
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(238,214,116);
+}
+
+QSlider::handle:horizontal {
+	background-color: rgb(255,245,193);
+	border: 2px solid rgb(50,41,0);
+	width: 10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+	background-color: rgb(249,207,0);
+	border: 2px solid rgb(50,41,0);
+	width: 10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	border-radius: 5px;
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="ySlider">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>110</y>
+      <width>16</width>
+      <height>165</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider {
+	border: none;
+	background: none;
+}
+
+QSlider::groove:vertical {
+	width: 4px;
+	background-color: rgb(120,190,150);
+	border-radius: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+QSlider::sub-page:vertical {
+	background-color: rgb(160,145,21);
+}
+
+QSlider::add-page:vertical {
+	background-color: rgb(238,214,116);
+}
+
+QSlider::handle:vertical {
+	background-color: rgb(255,245,193);
+	border: 2px solid rgb(50,41,0);
+	height: 10px;
+	margin-left: -5px;
+	margin-right: -5px;
+	border-radius: 5px;
+}
+
+QSlider::handle:vertical:hover {
+	background-color: rgb(249,207,0);
+	border: 2px solid rgb(50,41,0);
+	height: 10px;
+	margin-left: -5px;
+	margin-right: -5px;
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>255</x>
+     <y>10</y>
+     <width>35</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: none;
+	border-radius: 10px;
+	border-image: url(:/nodewidget/close.png);
+	background: rgb(255,255,255);
+}
+
+QPushButton:hover {
+	background-color: rgb(220,220,220);
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid rgb(220,220,220);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FunctionNodeWidget</class>
+ <widget class="QWidget" name="FunctionNodeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(255, 255, 255,0);
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 15px;
+border: 3px solid black;
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+	stop:0 rgb(243,218,108),
+	stop:0.167 rgb(243,218,108),
+	stop:0.1670001 rgb(255,253,220)
+	stop:1 rgb(255, 253, 220));</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QSlider" name="funcSlider">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>270</y>
+      <width>270</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider {
+	border: none;
+	background: none;
+}
+
+QSlider::groove:horizontal {
+	height: 4px;
+	background-color: rgb(120,190,150);
+	border-radius: 1px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+QSlider::sub-page:horizontal {
+	background-color: rgb(160,145,21);
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(238,214,116);
+}
+
+QSlider::handle:horizontal {
+	background-color: rgb(255,245,193);
+	border: 2px solid rgb(50,41,0);
+	width: 10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+	background-color: rgb(249,207,0);
+	border: 2px solid rgb(50,41,0);
+	width: 10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	border-radius: 5px;
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>180</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgba(255, 255, 255, 0);
+border: none;
+font: 14pt &quot;黑体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>节点名称</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showLabel">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>96</y>
+      <width>258</width>
+      <height>158</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255,255,255,0);
+border-color: rgba(255, 255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>此处显示图像</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iconLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+border-radius: 10px;
+image: url(:/nodewidget/CONTRAST.png);
+background: rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>60</y>
+      <width>91</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+border: none;
+background-color: rgba(255, 255, 255, 0);
+font: 10pt &quot;黑体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>预览</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>90</y>
+      <width>270</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px dashed rgb(100, 100, 100);
+border-radius: 10px;
+background-color:rgb(230, 230, 230);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_5</zorder>
+   <zorder>funcSlider</zorder>
+   <zorder>nameLabel</zorder>
+   <zorder>showLabel</zorder>
+   <zorder>iconLabel</zorder>
+   <zorder>checkBox</zorder>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>255</x>
+     <y>10</y>
+     <width>35</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: none;
+	border-radius: 10px;
+	border-image: url(:/nodewidget/close.png);
+	background: rgb(255,255,255);
+}
+
+QPushButton:hover {
+	background-color: rgb(220,220,220);
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid rgb(220,220,220);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

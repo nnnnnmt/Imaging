@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>nodechoice/add.png</file>
+        <file>nodechoice/aipic2pic.png</file>
+        <file>nodechoice/aiword2pic.png</file>
+        <file>nodechoice/basic.png</file>
+        <file>nodechoice/bright.png</file>
+        <file>nodechoice/contrast.png</file>
+        <file>nodechoice/filter.png</file>
+        <file>nodechoice/hue.png</file>
+        <file>nodechoice/input.png</file>
+        <file>nodechoice/out.png</file>
+        <file>nodechoice/saturat.png</file>
+        <file>nodechoice/temperature.png</file>
+        <file>nodechoice/temperaturePx.png</file>
+        <file>nodechoice/addPx.png</file>
+        <file>nodechoice/aipic2picPx.png</file>
+        <file>nodechoice/aiword2picPx.png</file>
+        <file>nodechoice/basicPx.png</file>
+        <file>nodechoice/brightPx.png</file>
+        <file>nodechoice/contrastPx.png</file>
+        <file>nodechoice/filterPx.png</file>
+        <file>nodechoice/huePx.png</file>
+        <file>nodechoice/inputPx.png</file>
+        <file>nodechoice/outPx.png</file>
+        <file>nodechoice/saturatPx.png</file>
+    </qresource>
+</RCC>

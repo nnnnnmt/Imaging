@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>window/transparent.png</file>
+        <file>window/accept.png</file>
+        <file>window/crop.png</file>
+        <file>window/move.png</file>
+        <file>window/do.png</file>
+        <file>window/imaging.jpg</file>
+        <file>window/null.png</file>
+        <file>window/processing.gif</file>
+        <file>window/processing1.gif</file>
+        <file>window/aicrop.png</file>
+        <file>window/assure.png</file>
+        <file>window/cancel.png</file>
+        <file>window/shift.png</file>
+    </qresource>
+</RCC>

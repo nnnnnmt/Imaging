@@ -68,7 +68,5 @@ git clone https://github.com/nnnnnmt/Imaging.git
 
 ## 致谢及声明
 感谢本课程的任课老师 **刘家瑛老师** 与负责助教 **匡浩伟学长** ，他们在本项目的完成过程中给予了极大的支持和帮助。
-
 本项目在UI设计及功能实现方面部分参考了 [ml blocks](https://www.mlblocks.com/) 与 [Nodegraphic](https://github.com/SynodicMonth/NodeGraphic)，向两个项目的制作团队表示感谢。
-
 由于时间紧迫，本项目不可避免的有许多不完善之处，还请多多指正。如果您发现了bug，欢迎在 issue 中告诉我们！
